@@ -1,0 +1,16 @@
+PODS:
+  - FW_ExpandableTableView (0.1.0)
+
+DEPENDENCIES:
+  - FW_ExpandableTableView (from `../`)
+
+EXTERNAL SOURCES:
+  FW_ExpandableTableView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FW_ExpandableTableView: 73d824e7a07e47608a91345ce6ed4719d42d8466
+
+PODFILE CHECKSUM: 7b13748c31f961fe70f99215d5bc15839d6c48f0
+
+COCOAPODS: 1.5.3
