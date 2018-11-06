@@ -51,17 +51,17 @@ import FW_ExpandableTableView
 **Inject data to FW_ExpandableTableView**
 
 - Assign [[String: Any]] type data to the FW_ExpandableTV by calling setUpDataSource().
-- setUpDataSource() requires two parameters; first is data and second is a key to find a child node in dynamic tree.
+- setUpDataSource() requires two parameters; first is data and second is a key to find a child node through dynamic tree.
 ```swift
 func setUpDataForTableView(childKeyToFind: String) {
         APIManager.sharedInstance.fetchData { (result) in
-            // Pass an array of a dictionary type data and a child key to find child node data in data structure.
+            // Pass an array of a dictionary data and a child key to find child node data in data structure.
             fwTableView.setUpDataSource(jsonArray: result, childKeyToFind: childKeyToFind)
             fwTableView.reloadData()
         }
     }
 ```
-- Dynamic tree
+- Dynamic tree Example
 ```json
 [
 	{
@@ -94,7 +94,7 @@ func setUpDataForTableView(childKeyToFind: String) {
 ]
 
 ```
-- TableViewDelegate and TableViewDataSource are simple enough and customizable.  
+- TableViewDelegate and TableViewDataSource are simple enough and highly customizable.  
 
 ```swift
  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -104,7 +104,7 @@ func setUpDataForTableView(childKeyToFind: String) {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: FWExpandableTVCell.self), for: indexPath) as? FWExpandableTVCell {
             cell.configureWithChild(fwTableView.datasource[indexPath.row])
-            // Customzie FWExpandableTVCell here.
+            // Customize FWExpandableTVCell here.
             // cell.titleLabel.text = yourData
             // Or
             // cell.customizableView = yourCustomView
@@ -140,6 +140,6 @@ func setUpDataForTableView(childKeyToFind: String) {
  
  [Tushar Agarwal](https://www.linkedin.com/in/tusharagarwal10/) (Special Thanks for Code Review)
  
- [Skyler Smith](https://www.linkedin.com/in/skyler-smith-670979103/) (Special Thanks for an idea in the logic)
+ [Skyler Smith](https://www.linkedin.com/in/skyler-smith-670979103/) (Special Thanks for a foundation of a logic)
 # License
 FW_ExpandableTableView is available under the MIT license. See the LICENSE file for more info.
