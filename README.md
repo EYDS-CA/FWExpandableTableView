@@ -94,6 +94,21 @@ func setUpDataForTableView(childKeyToFind: String) {
 ]
 
 ```
+- Each node in dynamic tree is stored as Node in datasource in FW_ExpandableTableView
+```swift
+public class Node : NSObject {
+    // An identifier.
+    public let id : String!
+    // Child nodes belonging to.
+    @objc
+    public dynamic var children: [Node]!
+    // A boolean whether a cell associated with the node is expanded.
+    public var isExpanded: Bool!
+    // A Storage of each node data in Dynamic tree.
+    public var object: [String: Any]?
+}
+```
+
 - TableViewDelegate and TableViewDataSource are simple enough and highly customizable.  
 
 ```swift
@@ -132,7 +147,6 @@ func setUpDataForTableView(childKeyToFind: String) {
         }
     }
 ```
-
 
 
 # Author
