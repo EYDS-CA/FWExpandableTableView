@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FW_ExpandableTableView_Example' do
+  pod 'FW_ExpandableTableView', :path => '../'
+
+  target 'FW_ExpandableTableView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

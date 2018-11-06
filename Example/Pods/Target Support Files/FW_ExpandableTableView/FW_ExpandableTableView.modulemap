@@ -1,0 +1,6 @@
+framework module FW_ExpandableTableView {
+  umbrella header "FW_ExpandableTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}
