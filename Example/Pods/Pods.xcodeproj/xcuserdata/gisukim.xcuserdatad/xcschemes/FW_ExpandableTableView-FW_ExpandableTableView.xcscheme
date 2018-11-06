@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6E6A3F7285C9761322E66541009A60C0"
+               BlueprintIdentifier = "B8E97EAB2258E34DEF651AA044DB9104"
                BuildableName = "FW_ExpandableTableView.bundle"
                BlueprintName = "FW_ExpandableTableView-FW_ExpandableTableView"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E6A3F7285C9761322E66541009A60C0"
+            BlueprintIdentifier = "B8E97EAB2258E34DEF651AA044DB9104"
             BuildableName = "FW_ExpandableTableView.bundle"
             BlueprintName = "FW_ExpandableTableView-FW_ExpandableTableView"
             ReferencedContainer = "container:Pods.xcodeproj">

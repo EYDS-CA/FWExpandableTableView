@@ -8,14 +8,11 @@
 import UIKit
 
 extension UIButton {
-    func animateRotation(isExpanded: Bool, with animation: Bool) {
-        if animation {
-            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
-                self.transform = isExpanded ? CGAffineTransform(rotationAngle: .pi) : .identity
-            }, completion: nil)
-        } else {
-            self.transform = isExpanded ? CGAffineTransform(rotationAngle: .pi) : .identity
+    
+    func rotateByAngle(requiresIdentityAngle isIdentity : Bool, requiresAnimation : Bool = true) {
+        UIView.animate(withDuration: requiresAnimation ? 0.2 : 0.0) {
+            self.transform = isIdentity ? .identity : CGAffineTransform(rotationAngle: .pi)
         }
     }
-}
 
+}

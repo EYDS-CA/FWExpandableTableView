@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FW_ExpandableTableView-FW_ExpandableTVCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FW_ExpandableTableView-FW_ExpandableTableView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
