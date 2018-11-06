@@ -136,7 +136,7 @@ func setUpDataForTableView(childKeyToFind: String) {
 
 
 # Author
- [Gisu Kim](www.linkedin.com/in/gisu-kim-b162a0127) (Author)
+ [Gisu Kim](https://www.linkedin.com/in/gisu-kim-b162a0127/) (Author)
  
  [Tushar Agarwal](https://www.linkedin.com/in/tusharagarwal10/) (Special Thanks for Code Review)
 # License
