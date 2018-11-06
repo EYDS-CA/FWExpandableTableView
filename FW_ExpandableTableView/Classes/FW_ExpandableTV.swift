@@ -59,7 +59,7 @@ public class FW_ExpandableTV: UITableView {
                 isParentIteration ? self.parent.children.append(child) : ()
             }
         }
-        
+
         createChildren(jsonArray: jsonArray, isParentIteration: true)
     }
     
