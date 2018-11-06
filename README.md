@@ -1,7 +1,7 @@
 # FWExpandableTableView
 
 # Introduction
-FWInfiniteExpandableTableView is easier and less-coding to achieve UITableViewCell expandable and collapsable. Unlikely, it supports as much levels of UITableViewCell expanding as your data structured. You can fully customize FWExpandingTableViewCell as you need.
+FW_ExpandableTableView is easier and less-coding to achieve UITableViewCell expandable and collapsable. Unlikely, it supports as much levels of UITableViewCell expanding as your data structured. You can fully customize FWExpandingTableViewCell as you need.
 
 
 ![fwexpandabletv_demo](https://user-images.githubusercontent.com/16994445/48033026-87dd0200-e10e-11e8-9725-58e1cca5ed9e.gif)
@@ -14,11 +14,11 @@ FWInfiniteExpandableTableView is easier and less-coding to achieve UITableViewCe
 **CocoaPods**
 
 FW_ExpandableTableView is available  through CocoaPods. To install it, simply add the following line to your Podfile:
-```
+```pod
 pod 'FW_ExpandableTableView'
 ```
 and import the library in a page where you use 
-```
+```swift
 import FW_ExpandableTableView
 ```
 
@@ -50,7 +50,7 @@ import FW_ExpandableTableView
 
 **Inject data to FW_ExpandableTableView**
 
-- Assign JSON data typed [[String: Any]] to the FW_ExpandableTV by calling setUpDataSource().
+- Assign [[String: Any]] type data to the FW_ExpandableTV by calling setUpDataSource().
 - setUpDataSource() requires two parameters; first is data and second is a key to find a child node in dynamic tree.
 ```swift
 func setUpDataForTableView(childKeyToFind: String) {
@@ -61,7 +61,7 @@ func setUpDataForTableView(childKeyToFind: String) {
         }
     }
 ```
-- Dynamic tree using JSON 
+- Dynamic tree
 ```json
 [
 	{
@@ -94,7 +94,7 @@ func setUpDataForTableView(childKeyToFind: String) {
 ]
 
 ```
-- TableViewDelegate and TableViewDataSource look like below
+- TableViewDelegate and TableViewDataSource are simple enough and customizable.  
 
 ```swift
  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -139,5 +139,7 @@ func setUpDataForTableView(childKeyToFind: String) {
  [Gisu Kim](https://www.linkedin.com/in/gisu-kim-b162a0127/) (Author)
  
  [Tushar Agarwal](https://www.linkedin.com/in/tusharagarwal10/) (Special Thanks for Code Review)
+ 
+ [Skyler Smith](https://www.linkedin.com/in/skyler-smith-670979103/) (Special Thanks for an idea in the logic)
 # License
 FW_ExpandableTableView is available under the MIT license. See the LICENSE file for more info.
