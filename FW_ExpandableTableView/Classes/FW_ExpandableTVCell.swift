@@ -14,18 +14,18 @@ public class PaddingLabel: UILabel {
     }
 }
 
-public class FWExpandableTVCell: UITableViewCell {
+public class FW_ExpandableTVCell: UITableViewCell {
+    
     // Show if the cell is expanded or not
-    public var isExpanded : Bool = false
+    public internal(set) var isExpanded : Bool = false
     // Show if the cell is expandable or not
     public var isExpandable : Bool  = false
     // Default colors of each level for the first 10 levels.
     public var colorsForEachLevel = [#colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1), #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1), #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1), #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1), #colorLiteral(red: 0.09019608051, green: 0, blue: 0.3019607961, alpha: 1), #colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1), #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), #colorLiteral(red: 0, green: 0.9914394021, blue: 1, alpha: 1), #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1), #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)]
     
-    public var customizableView: UIView = {
+    public let customizableView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        
         return view
     }()
     
@@ -34,23 +34,27 @@ public class FWExpandableTVCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .white
         label.backgroundColor = .clear
-        
         return label
     }()
     
     // Get an image asset from pod library bundle
-    private func getImageFromBundle(name: String) -> UIImage {
-        let podBundle = Bundle(for: FW_ExpandableTableView.self)
-        if let url = podBundle.url(forResource: "FW_ExpandableTableView", withExtension: "bundle") {
-            let bundle = Bundle(url: url)
-            return UIImage(named: name, in: bundle, compatibleWith: nil)!
-        }
-        return UIImage()
+    private let podsBundle : Bundle = {
+        let bundle = Bundle(for: FW_ExpandableTVCell.self)
+        return Bundle(url: bundle.url(forResource: "FW_ExpandableTVCell",
+                                      withExtension: "bundle")!)!
+    }()
+    
+    private func imageFor(name imageName: String) -> UIImage {
+        return UIImage(named: imageName, in: podsBundle, compatibleWith: nil)!
+    }
+    
+    public var downArrowImage: UIImage {
+        return imageFor(name: "downArrow")
     }
     
     public lazy var expandingBtn: UIButton = {
         let button = UIButton()
-        button.setImage(getImageFromBundle(name: "downArrow"), for: .normal)
+        button.setImage(self.downArrowImage, for: .normal)
         button.tintColor = .white
         button.translatesAutoresizingMaskIntoConstraints = false
         button.isUserInteractionEnabled = false
@@ -101,7 +105,7 @@ public class FWExpandableTVCell: UITableViewCell {
         isExpanded = node.isExpanded
         isExpandable = !node.children.isEmpty ? true : false
         expandingBtn.isHidden = !node.children.isEmpty ? false : true
-        expandingBtn.animateRotation(isExpanded: node.isExpanded, with: false)
+        expandingBtn.rotateByAngle(requiresIdentityAngle: !node.isExpanded, requiresAnimation: false)
         if let color = color {
             customizableView.backgroundColor = color
         } else {

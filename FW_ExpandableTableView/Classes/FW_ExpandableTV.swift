@@ -29,15 +29,16 @@ public class Node : NSObject {
     }
 }
 
-public class FW_ExpandableTableView: UITableView {
-    
+public class FW_ExpandableTV: UITableView {
+    // A placeholder where all data is stored.
     @objc
     private lazy dynamic var parent = Node(id: "0")
-    
+    // Datasource available from users.
     public lazy var datasource = [Node]()
-    
+    // A key to find a child nodes in dynamic tree.
     private lazy var uniqueChildKey : String = ""
     
+    // Keeping track on changes on the parent property and delivering a update to datasource.
     override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == #keyPath(parent.children) { self.datasource = parent.children }
     }
@@ -58,27 +59,29 @@ public class FW_ExpandableTableView: UITableView {
                 isParentIteration ? self.parent.children.append(child) : ()
             }
         }
-        
+
         createChildren(jsonArray: jsonArray, isParentIteration: true)
     }
     
     // Estimate a number of children to be added and add these to the array to be displayed.
-    public func expandChildren(cell: FWExpandableTVCell, indexPath: IndexPath) {
-        self.parent.children[indexPath.row].isExpanded = true
+    private func expandChildren(cell: FW_ExpandableTVCell, indexPath: IndexPath) {
         let node = self.parent.children[indexPath.row]
-        var updatingIndexPathGroup = [IndexPath]()
-        DispatchQueue.main.async {
-            if let count = node.children?.count, var childNodes = node.children  {
-                for i in 0..<count {
+        if node.isExpanded == false {
+            // Update a isExpanded flag.
+            node.isExpanded = true
+            var insertingIndexPathGroup = [IndexPath]()
+            if let childNode = node.children {
+                for i in 0..<childNode.count {
+                    let subchildNode = childNode[i]
                     // Refresh a expanding boolean to original.
-                    self.refreshExpandingFlag(childNodes[i])
-                    // Start from the next row of a selected row
-                    self.parent.children.insert(childNodes[i], at: indexPath.row + (i+1))
+                    subchildNode.isExpanded = false
+                    // Add from the next row of a selected row.
                     let newIndexPath = IndexPath(row: indexPath.row + (i+1), section: 0)
-                    updatingIndexPathGroup.append(newIndexPath)
+                    self.parent.children.insert(subchildNode, at: newIndexPath.row)
+                    insertingIndexPathGroup.append(newIndexPath)
                 }
                 DispatchQueue.main.async {
-                    self.insertRows(at: updatingIndexPathGroup, with: .fade)
+                    self.insertRows(at: insertingIndexPathGroup, with: .fade)
                     self.updateCellTapped(cell, indexPath: indexPath)
                 }
             }
@@ -86,64 +89,51 @@ public class FW_ExpandableTableView: UITableView {
     }
     
     // Estimate a number of children to be deleted and delete these from the array to be displayed.
-    public func collapseChildren(cell: FWExpandableTVCell, indexPath: IndexPath) {
-        var deletingIndexPathGroup = [IndexPath]()
-        let childCount = countAllChildrenOfNodeToBeDeleted(self.parent.children[indexPath.row], indexPath: indexPath)
-        DispatchQueue.main.async {
-            for i in 0..<childCount {
-                // Delete the next line of a selected cell
+    private func collapseChildren(cell: FW_ExpandableTVCell, indexPath: IndexPath) {
+        let node = self.parent.children[indexPath.row]
+        if node.isExpanded {
+            // Update a isExpanded flag.
+            node.isExpanded = false
+            var deletingIndexPathGroup = [IndexPath]()
+            for i in 0..<numberOfChildrenRows(forNode: self.parent.children[indexPath.row], shallCountItself: false) {
+                // Delete the next line of a selected cell.
                 self.parent.children.remove(at: indexPath.row + 1)
-                // Remove from the next row of a selected row
-                let deletingIndexPath = IndexPath(row: indexPath.row + (1+i), section: 0)
+                // Remove from the next row of a selected row.
+                let deletingIndexPath = IndexPath(row: indexPath.row + (i+1), section: 0)
                 deletingIndexPathGroup.append(deletingIndexPath)
             }
             DispatchQueue.main.async {
-                // Refresh a expanding flag of a node associated with a selected cell.
-                self.refreshExpandingFlag(self.parent.children[indexPath.row])
-                // Delete rows and update a selected cell
+                // Delete rows and update the selected cell.
                 self.deleteRows(at: deletingIndexPathGroup, with: .fade)
                 self.updateCellTapped(cell, indexPath: indexPath)
             }
         }
     }
     
-    // Useful methods //
-    
-    
-    // Returns the cell at the ExpandableIndexPath given.
-    public func cellForRowAtIndexPath(indexPath: IndexPath) -> UITableViewCell? {
-        if let cell = self.cellForRow(at: indexPath) as? FWExpandableTVCell {
-            return cell
-        }
-        
-        return UITableViewCell()
-    }
-
-    // Methods to support
-    
-    func refreshExpandingFlag(_ node: Node) {
-        node.isExpanded = false
-    }
-    
-    func countAllChildrenOfNodeToBeDeleted(_ node: Node, indexPath: IndexPath) -> Int {
-        var count = 0
-        for i in indexPath.row+1..<self.parent.children.count {
-            let index = node.id.index(node.id.startIndex, offsetBy: node.id.count)
-            // Children' id must contains of a parent's id as a portion of their id (parent:0-0, child:0-0-0)
-            if self.parent.children[i].id.contains(node.id) &&
-                node.id.count < self.parent.children[i].id.count &&
-                node.id == self.parent.children[i].id[self.parent.children[i].id.startIndex..<index] {
-                count += 1
-            }
+    // Loop through a node associated with a cell tapped on and count all chilren are current in the table.
+    private func numberOfChildrenRows(forNode node : Node, shallCountItself countItself : Bool) -> Int {
+        var count = countItself ? 1 : 0
+        node.children.forEach { (child) in
+            count += child.isExpanded ? self.numberOfChildrenRows(forNode: child, shallCountItself: true) : 1
         }
         return count
     }
     
-    // Animate to rotate downArrow button and update cell's a flag whether it is expanded
-    func updateCellTapped(_ cell: FWExpandableTVCell, indexPath: IndexPath) {
+    // Animate to rotate downArrow button and update cell's a flag whether it is expanded.
+    private func updateCellTapped(_ cell: FW_ExpandableTVCell, indexPath: IndexPath) {
         // Rotating Animation
-        cell.expandingBtn.animateRotation(isExpanded: self.parent.children[indexPath.row].isExpanded, with: true)
+        cell.expandingBtn.rotateByAngle(requiresIdentityAngle: !self.parent.children[indexPath.row].isExpanded)
         // Switch boolean to opposite
-        cell.isExpanded = self.parent.children[indexPath.row].isExpanded ? true : false
+        cell.isExpanded = self.parent.children[indexPath.row].isExpanded
+    }
+    
+    // Returns the cell at the ExpandableIndexPath given.
+    public func cellForRowAtIndexPath(indexPath: IndexPath) -> FW_ExpandableTVCell? {
+        return self.cellForRow(at: indexPath) as? FW_ExpandableTVCell
+    }
+    
+    // Update the tableViewCell depend on a boolean property in a cell selected.
+    public func updateCell(_ cell : FW_ExpandableTVCell, atIndexPath indexPath : IndexPath, shouldCollapse collapse : Bool) {
+        collapse ? self.collapseChildren(cell: cell, indexPath: indexPath) :  self.expandChildren(cell: cell, indexPath: indexPath)
     }
 }
