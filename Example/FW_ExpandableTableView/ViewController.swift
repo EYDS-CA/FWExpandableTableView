@@ -10,7 +10,7 @@ import UIKit
 import FW_ExpandableTableView
 
 class ViewController: UIViewController {    
-    @IBOutlet weak var fwTableView: FW_ExpandableTableView!
+    @IBOutlet weak var fwTableView: FW_ExpandableTV!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,16 +32,16 @@ class ViewController: UIViewController {
     }
     
     func setUpDataForTableView(childKeyToFind: String) {
-        parseJSONFromLocalStorage { (apiData) in
+        parseJSONFromLocalStorage { (result) in
             // Pass an array of a dictionary type data and a child key to find child node data in data structure.
-            self.fwTableView.setUpDataSource(jsonArray: apiData, childKeyToFind: "children")
+            self.fwTableView.setUpDataSource(jsonArray: result, childKeyToFind: "children")
             self.fwTableView.reloadData()
         }
     }
     
     func setUpTableView() {
         // Require
-        fwTableView.register(FWExpandableTVCell.self, forCellReuseIdentifier: String(describing: FWExpandableTVCell.self))
+        fwTableView.register(FW_ExpandableTVCell.self, forCellReuseIdentifier: String(describing: FW_ExpandableTVCell.self))
         // Options
         fwTableView.backgroundColor = .white
         fwTableView.separatorStyle = .none
@@ -57,7 +57,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: FWExpandableTVCell.self), for: indexPath) as? FWExpandableTVCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: FW_ExpandableTVCell.self), for: indexPath) as? FW_ExpandableTVCell {
             cell.configureWithChild(fwTableView.datasource[indexPath.row])
             // Customzie FWExpandableTVCell here.
             // cell.titleLabel.text = yourData
@@ -78,13 +78,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let cell = tableView.cellForRow(at: indexPath) as? FWExpandableTVCell, cell.isExpandable {
-            // Expand or collapse children
-            if cell.isExpanded {
-                fwTableView.collapseChildren(cell: cell, indexPath: indexPath)
-            } else {
-                fwTableView.expandChildren(cell: cell, indexPath: indexPath)
-            }
+        if let cell = tableView.cellForRow(at: indexPath) as? FW_ExpandableTVCell, cell.isExpandable {
+            fwTableView.updateCell(cell, atIndexPath: indexPath, shouldCollapse: cell.isExpanded)
         }
     }
 }

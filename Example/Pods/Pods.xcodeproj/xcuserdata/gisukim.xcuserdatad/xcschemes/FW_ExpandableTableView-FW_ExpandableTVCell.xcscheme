@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B8E97EAB2258E34DEF651AA044DB9104"
-               BuildableName = "FW_ExpandableTableView.bundle"
-               BlueprintName = "FW_ExpandableTableView-FW_ExpandableTableView"
+               BlueprintIdentifier = "66856BEE6CD584162B553011EFCE2D5B"
+               BuildableName = "FW_ExpandableTVCell.bundle"
+               BlueprintName = "FW_ExpandableTableView-FW_ExpandableTVCell"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B8E97EAB2258E34DEF651AA044DB9104"
-            BuildableName = "FW_ExpandableTableView.bundle"
-            BlueprintName = "FW_ExpandableTableView-FW_ExpandableTableView"
+            BlueprintIdentifier = "66856BEE6CD584162B553011EFCE2D5B"
+            BuildableName = "FW_ExpandableTVCell.bundle"
+            BlueprintName = "FW_ExpandableTableView-FW_ExpandableTVCell"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

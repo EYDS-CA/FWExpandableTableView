@@ -7,24 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C6D88935C2549294B81EF9E4D2FA0D3 /* FW_ExpandableTVCell.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7F21491F3C38581B3D69A78C7E9281D0 /* FW_ExpandableTVCell.bundle */; };
+		258FBAFAD7272E90CAF49BDF13473730 /* downArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 297ECD82C4DF045664C28A6A53B56A55 /* downArrow.png */; };
 		2B39EC02288D85BA5235214AAC904988 /* Pods-FW_ExpandableTableView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C73093B45B9B75585F6A4E9C315C284 /* Pods-FW_ExpandableTableView_Example-dummy.m */; };
-		72F270C7F2437E7551ACCFE46E9A8C8E /* FW_ExpandableTableView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 73C1E9282AF9CED4CB2D650BFEB74160 /* FW_ExpandableTableView.bundle */; };
-		765C1B11CD03694088336B7F13011C66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		7FC0ABC244F80A2919E326F0FE961FA9 /* FW_ExpandableTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCEF01A0D9CB6B7C774B70CD3A68C13 /* FW_ExpandableTVCell.swift */; };
+		2F9C7C452552ACCB401A4A0FC11F13AF /* FW_ExpandableTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F148A8B24FAEF86A3D8D6F5697044F /* FW_ExpandableTableView-dummy.m */; };
+		3AD9BB8F7A4FA97229A1126F6444CE23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		69023265134602078061FEF2B1DA8EA2 /* FW_ExpandableTableView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6364D01EF61CC9624316C3F2A49F69F6 /* FW_ExpandableTableView.bundle */; };
+		765C1B11CD03694088336B7F13011C66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		816841EBD2B13EEA239B52F7C32233C9 /* Pods-FW_ExpandableTableView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B991BF15775783A05169A55A54F26E /* Pods-FW_ExpandableTableView_Tests-dummy.m */; };
-		96C55580BCEFD1670C4115D9E182F5FB /* FW_ExpandableTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C754FD4AC0F62C86B575317609DA9D26 /* FW_ExpandableTableView-dummy.m */; };
-		A6FFCA45ACDB17E4DE52CB719661890E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		AE54DFBB529A23AB855501E7EBE76CB0 /* FW_ExpandableTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A7E4CDEA57143A2297BDC8552BB5E82 /* FW_ExpandableTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9FAB7D56330804752D65A9DA64FC935 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		8314B63CA23D3957E032F895B4D4B525 /* FW_ExpandableTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87802467D0E05B3766430141E26D5D3 /* FW_ExpandableTVCell.swift */; };
+		93F95DAAC0A77631D21A7730213977E8 /* FW_ExpandableTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B309DB1176384A30AAC3B5ADB9C48 /* FW_ExpandableTV.swift */; };
+		B83A94DA1547E99E688A365DCD18ED9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */; };
+		B9FAB7D56330804752D65A9DA64FC935 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
 		BA3A4892822A82529A81A31BED8E85FD /* Pods-FW_ExpandableTableView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6E5B63A367F94E9010BD7E5C9E9E339 /* Pods-FW_ExpandableTableView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA68ED161EDE795FC3A766234564CC53 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF326D8266D5F190AF78D93710C83149 /* UIButton+Ext.swift */; };
-		C036D36D85B11B76F97A37C7F7FA1274 /* FW_ExpandableTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2106962A84E1023F285BAAC6953C25 /* FW_ExpandableTV.swift */; };
-		D21E6FBCF0EDF1DFC794FEFC653F0C14 /* downArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0586B9EC3642F4E5B9CBB6EE87A63384 /* downArrow.png */; };
-		D9B1F4FB10B0A0779E52BC8D89D69CDB /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34680A8E0CE934F55F58A1631A1841D2 /* ReplaceMe.swift */; };
+		C278B8730B0A09F33A09AFED48E37DE5 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4EF417B29882AEEA3251189BD46A85 /* UIButton+Ext.swift */; };
+		C5895766B534E267E1611FE67BAAE35D /* downArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 297ECD82C4DF045664C28A6A53B56A55 /* downArrow.png */; };
+		C7D116CE5F9A3EC09E6262F90B61763B /* FW_ExpandableTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E060E81C233729F168D6F3EF1B9050E /* FW_ExpandableTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7F41DC325F10C2BFB8D4BB337491452 /* Pods-FW_ExpandableTableView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54D4920C0EA75B100478F10B95ADAF83 /* Pods-FW_ExpandableTableView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0B909B4AE71A7874D79E3F7F8E9F62FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B8E97EAB2258E34DEF651AA044DB9104;
+			remoteInfo = "FW_ExpandableTableView-FW_ExpandableTableView";
+		};
 		4DD9D889B8FA341A01917CA5EDC6121C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -32,74 +41,69 @@
 			remoteGlobalIDString = BEB2B1C364BE2D76B5E27E89A452A551;
 			remoteInfo = "Pods-FW_ExpandableTableView_Example";
 		};
-		B87754EDC143DAC75FED18063EF79900 /* PBXContainerItemProxy */ = {
+		B74937584A22B0D8FF09839B34348323 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6E6A3F7285C9761322E66541009A60C0;
-			remoteInfo = "FW_ExpandableTableView-FW_ExpandableTableView";
+			remoteGlobalIDString = 66856BEE6CD584162B553011EFCE2D5B;
+			remoteInfo = "FW_ExpandableTableView-FW_ExpandableTVCell";
 		};
 		D6F3DBE05B8CF85FF8B4553065B35B28 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 78C01FB57ED8DE0AAC55D8A3238AB351;
+			remoteGlobalIDString = 5493B888BF9F62F29EBD8248CC359CF8;
 			remoteInfo = FW_ExpandableTableView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0586B9EC3642F4E5B9CBB6EE87A63384 /* downArrow.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = downArrow.png; path = FW_ExpandableTableView/Assets/downArrow.png; sourceTree = "<group>"; };
-		129D85FF4EC9534DD428118FD07B92DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		050850A43C90E5F5113A103C1B5FBF28 /* FW_ExpandableTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FW_ExpandableTableView.modulemap; sourceTree = "<group>"; };
+		094CC522D3568BCA45CED365FFE775DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A7B309DB1176384A30AAC3B5ADB9C48 /* FW_ExpandableTV.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FW_ExpandableTV.swift; path = FW_ExpandableTableView/Classes/FW_ExpandableTV.swift; sourceTree = "<group>"; };
+		14F148A8B24FAEF86A3D8D6F5697044F /* FW_ExpandableTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FW_ExpandableTableView-dummy.m"; sourceTree = "<group>"; };
 		1DB3D396A04989628570EF68112BD3B9 /* Pods-FW_ExpandableTableView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FW_ExpandableTableView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2132ADB757A4F1A189E1D16B85F1A2E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		297ECD82C4DF045664C28A6A53B56A55 /* downArrow.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = downArrow.png; path = FW_ExpandableTableView/Assets/downArrow.png; sourceTree = "<group>"; };
 		2C50A226913A61F7B2D206912016B95F /* Pods-FW_ExpandableTableView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FW_ExpandableTableView_Example.modulemap"; sourceTree = "<group>"; };
-		34680A8E0CE934F55F58A1631A1841D2 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = FW_ExpandableTableView/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		36B8EB55548D50F4E57FDD6355965045 /* Pods-FW_ExpandableTableView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FW_ExpandableTableView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		38C213E67230734CBD15FD82A08FC247 /* Pods-FW_ExpandableTableView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FW_ExpandableTableView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		39979D48CA1FA92300A6C4AFB0C86715 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		3FCEF01A0D9CB6B7C774B70CD3A68C13 /* FW_ExpandableTVCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FW_ExpandableTVCell.swift; path = FW_ExpandableTableView/Classes/FW_ExpandableTVCell.swift; sourceTree = "<group>"; };
+		3C4EF417B29882AEEA3251189BD46A85 /* UIButton+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Ext.swift"; path = "FW_ExpandableTableView/Classes/UIButton+Ext.swift"; sourceTree = "<group>"; };
 		495DAF1B03DF5D9FB033052034BD9B5B /* Pods-FW_ExpandableTableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FW_ExpandableTableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		54D4920C0EA75B100478F10B95ADAF83 /* Pods-FW_ExpandableTableView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FW_ExpandableTableView_Example-umbrella.h"; sourceTree = "<group>"; };
-		56E83E3863F9FA5E13EEA54E0970F23D /* FW_ExpandableTableView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = FW_ExpandableTableView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		564D13643C3F2CEE2996B8BEB278D0F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5B3049AB2F0BF634075C7E9DB5532A86 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A7E4CDEA57143A2297BDC8552BB5E82 /* FW_ExpandableTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FW_ExpandableTableView-umbrella.h"; sourceTree = "<group>"; };
+		5C06702667B8069E03C353F841673A61 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5E060E81C233729F168D6F3EF1B9050E /* FW_ExpandableTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FW_ExpandableTableView-umbrella.h"; sourceTree = "<group>"; };
+		6364D01EF61CC9624316C3F2A49F69F6 /* FW_ExpandableTableView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FW_ExpandableTableView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C73093B45B9B75585F6A4E9C315C284 /* Pods-FW_ExpandableTableView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FW_ExpandableTableView_Example-dummy.m"; sourceTree = "<group>"; };
-		73C1E9282AF9CED4CB2D650BFEB74160 /* FW_ExpandableTableView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FW_ExpandableTableView.bundle; path = "FW_ExpandableTableView-FW_ExpandableTableView.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70BC5E677611B9A3CA18279032B658BA /* Pods_FW_ExpandableTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FW_ExpandableTableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		758AADD8452B4E192C19CC8922FCC6D3 /* Pods-FW_ExpandableTableView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FW_ExpandableTableView_Example-resources.sh"; sourceTree = "<group>"; };
-		76D2F031889AC760A16CC2743096159C /* FW_ExpandableTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FW_ExpandableTableView.xcconfig; sourceTree = "<group>"; };
 		78F9BB868126F83CC817112AC19DBB6F /* Pods-FW_ExpandableTableView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FW_ExpandableTableView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7D40362D562060F2E97644A212864DBC /* Pods_FW_ExpandableTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FW_ExpandableTableView_Tests.framework; path = "Pods-FW_ExpandableTableView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E2106962A84E1023F285BAAC6953C25 /* FW_ExpandableTV.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FW_ExpandableTV.swift; path = FW_ExpandableTableView/Classes/FW_ExpandableTV.swift; sourceTree = "<group>"; };
+		7F21491F3C38581B3D69A78C7E9281D0 /* FW_ExpandableTVCell.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FW_ExpandableTVCell.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		898465743CB8F6BF51D03DE89CF64B6D /* Pods-FW_ExpandableTableView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FW_ExpandableTableView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8B619E3C30BF2AB56B44F74665B99C68 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		971EB503E8A5429D39D5E8394835608E /* ResourceBundle-FW_ExpandableTableView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FW_ExpandableTableView-Info.plist"; sourceTree = "<group>"; };
-		98937A63E8A4FB7E035AD2627D9F4411 /* FW_ExpandableTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FW_ExpandableTableView.modulemap; sourceTree = "<group>"; };
+		8F866ED8E8783003E1C40F766668CFC7 /* Pods_FW_ExpandableTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FW_ExpandableTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		908E902E026C5C22904CF9014A5604AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		934207B9BF9DFB6BD48B2560C7C1930C /* FW_ExpandableTableView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = FW_ExpandableTableView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99F17CB5100DACFA78628D5ACF9086E0 /* ResourceBundle-FW_ExpandableTVCell-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FW_ExpandableTVCell-Info.plist"; sourceTree = "<group>"; };
+		9B943F28A91E258714D15EB7A8E47F96 /* FW_ExpandableTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FW_ExpandableTableView.xcconfig; sourceTree = "<group>"; };
 		A01FDD5684AB4C967E3A03D3C6BA9701 /* Pods-FW_ExpandableTableView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FW_ExpandableTableView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		A4B2580E3E45F95A139822A9E3C141B2 /* Pods-FW_ExpandableTableView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FW_ExpandableTableView_Tests.modulemap"; sourceTree = "<group>"; };
 		A6E5B63A367F94E9010BD7E5C9E9E339 /* Pods-FW_ExpandableTableView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FW_ExpandableTableView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		A83A95A45C25858F4B0D6F676B787D46 /* Pods-FW_ExpandableTableView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FW_ExpandableTableView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A8B991BF15775783A05169A55A54F26E /* Pods-FW_ExpandableTableView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FW_ExpandableTableView_Tests-dummy.m"; sourceTree = "<group>"; };
 		AAFB1A904195018C1DF142C6336A294C /* Pods-FW_ExpandableTableView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FW_ExpandableTableView_Tests-resources.sh"; sourceTree = "<group>"; };
-		B05D7CFC48493B9FB78104B5A5BEFE50 /* Pods_FW_ExpandableTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FW_ExpandableTableView_Example.framework; path = "Pods-FW_ExpandableTableView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C147B3D798AC6FA454F45AD329A27E93 /* FW_ExpandableTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FW_ExpandableTableView-prefix.pch"; sourceTree = "<group>"; };
-		C754FD4AC0F62C86B575317609DA9D26 /* FW_ExpandableTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FW_ExpandableTableView-dummy.m"; sourceTree = "<group>"; };
+		ACA9273F8D082AC8A2C7DEB856254E88 /* FW_ExpandableTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FW_ExpandableTableView-prefix.pch"; sourceTree = "<group>"; };
+		BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C9E4740DAD0B0E6E5F716E7D73DB6927 /* Pods-FW_ExpandableTableView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FW_ExpandableTableView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D4402C1987AF625ED2FC7754F8EB6863 /* FW_ExpandableTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FW_ExpandableTableView.framework; path = FW_ExpandableTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D559F912910A7C7170C34C60084178B5 /* FW_ExpandableTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FW_ExpandableTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDDA8BE53C2A6CE361335ECFB18B291E /* ResourceBundle-FW_ExpandableTableView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FW_ExpandableTableView-Info.plist"; sourceTree = "<group>"; };
 		DF620CDA04A4ED2B13A2D583DB7AF4DA /* Pods-FW_ExpandableTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FW_ExpandableTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		EF326D8266D5F190AF78D93710C83149 /* UIButton+Ext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Ext.swift"; path = "FW_ExpandableTableView/Classes/UIButton+Ext.swift"; sourceTree = "<group>"; };
+		F87802467D0E05B3766430141E26D5D3 /* FW_ExpandableTVCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FW_ExpandableTVCell.swift; path = FW_ExpandableTableView/Classes/FW_ExpandableTVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0B46BB7458F57018C5DD0104AD445D88 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		49A40FD33B810980B38B7A5E220CE5DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -108,11 +112,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		555C30098B412FB5361331FFF01C27CF /* Frameworks */ = {
+		64BA065831133922E633BFC58F73FEF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6FFCA45ACDB17E4DE52CB719661890E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,40 +127,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B94A2ECDD7664F611650B03ABDA14903 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE5D664A26E95948C73BFD21BB9DEAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD9BB8F7A4FA97229A1126F6444CE23 /* Foundation.framework in Frameworks */,
+				B83A94DA1547E99E688A365DCD18ED9A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		038B318762FADA9A473BC6DE251B6EF1 /* Pod */ = {
+		10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				56E83E3863F9FA5E13EEA54E0970F23D /* FW_ExpandableTableView.podspec */,
-				39979D48CA1FA92300A6C4AFB0C86715 /* LICENSE */,
-				2132ADB757A4F1A189E1D16B85F1A2E5 /* README.md */,
+				908E902E026C5C22904CF9014A5604AD /* Foundation.framework */,
+				BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */,
 			);
-			name = Pod;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		2ABE6A5DDCF359FBF7F533E2305F02FB /* Resources */ = {
+		150FE9FEE7B82E771735A600FBCF08F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0586B9EC3642F4E5B9CBB6EE87A63384 /* downArrow.png */,
+				6364D01EF61CC9624316C3F2A49F69F6 /* FW_ExpandableTableView.bundle */,
+				D559F912910A7C7170C34C60084178B5 /* FW_ExpandableTableView.framework */,
+				7F21491F3C38581B3D69A78C7E9281D0 /* FW_ExpandableTVCell.bundle */,
+				70BC5E677611B9A3CA18279032B658BA /* Pods_FW_ExpandableTableView_Example.framework */,
+				8F866ED8E8783003E1C40F766668CFC7 /* Pods_FW_ExpandableTableView_Tests.framework */,
 			);
-			name = Resources;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		34461FBC4748E9E99FDF65BC5089C5FB /* Support Files */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				98937A63E8A4FB7E035AD2627D9F4411 /* FW_ExpandableTableView.modulemap */,
-				76D2F031889AC760A16CC2743096159C /* FW_ExpandableTableView.xcconfig */,
-				C754FD4AC0F62C86B575317609DA9D26 /* FW_ExpandableTableView-dummy.m */,
-				C147B3D798AC6FA454F45AD329A27E93 /* FW_ExpandableTableView-prefix.pch */,
-				6A7E4CDEA57143A2297BDC8552BB5E82 /* FW_ExpandableTableView-umbrella.h */,
-				129D85FF4EC9534DD428118FD07B92DE /* Info.plist */,
-				971EB503E8A5429D39D5E8394835608E /* ResourceBundle-FW_ExpandableTableView-Info.plist */,
+				10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/FW_ExpandableTableView";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4BF4969B2A8E0D98E480404018FD73B2 /* Pods-FW_ExpandableTableView_Tests */ = {
@@ -190,32 +205,17 @@
 		551767F917A891185DF15B7882DB57CE /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				607040861811EF1F1AE51798A782563D /* FW_ExpandableTableView */,
+				A1CAD7909D8E79C9F39F4833B39140DA /* FW_ExpandableTableView */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+		6676876F9A7E06E0C56C7371AFAB8FA4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+				297ECD82C4DF045664C28A6A53B56A55 /* downArrow.png */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		607040861811EF1F1AE51798A782563D /* FW_ExpandableTableView */ = {
-			isa = PBXGroup;
-			children = (
-				7E2106962A84E1023F285BAAC6953C25 /* FW_ExpandableTV.swift */,
-				3FCEF01A0D9CB6B7C774B70CD3A68C13 /* FW_ExpandableTVCell.swift */,
-				34680A8E0CE934F55F58A1631A1841D2 /* ReplaceMe.swift */,
-				EF326D8266D5F190AF78D93710C83149 /* UIButton+Ext.swift */,
-				038B318762FADA9A473BC6DE251B6EF1 /* Pod */,
-				2ABE6A5DDCF359FBF7F533E2305F02FB /* Resources */,
-				34461FBC4748E9E99FDF65BC5089C5FB /* Support Files */,
-			);
-			name = FW_ExpandableTableView;
-			path = ../..;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7249CDD11C3C3396F05E3CF8F26BA317 /* Pods-FW_ExpandableTableView_Example */ = {
@@ -241,29 +241,50 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				551767F917A891185DF15B7882DB57CE /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C8AC184C64746F619946130B08E80A25 /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				150FE9FEE7B82E771735A600FBCF08F1 /* Products */,
 				4D3EA297CFC14FAA8CFB0F99E246F6BE /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		8B8D695E9297F5D83FC97E260F08352C /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+				934207B9BF9DFB6BD48B2560C7C1930C /* FW_ExpandableTableView.podspec */,
+				5C06702667B8069E03C353F841673A61 /* LICENSE */,
+				564D13643C3F2CEE2996B8BEB278D0F5 /* README.md */,
 			);
-			name = Frameworks;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		C8AC184C64746F619946130B08E80A25 /* Products */ = {
+		A1CAD7909D8E79C9F39F4833B39140DA /* FW_ExpandableTableView */ = {
 			isa = PBXGroup;
 			children = (
-				73C1E9282AF9CED4CB2D650BFEB74160 /* FW_ExpandableTableView.bundle */,
-				D4402C1987AF625ED2FC7754F8EB6863 /* FW_ExpandableTableView.framework */,
-				B05D7CFC48493B9FB78104B5A5BEFE50 /* Pods_FW_ExpandableTableView_Example.framework */,
-				7D40362D562060F2E97644A212864DBC /* Pods_FW_ExpandableTableView_Tests.framework */,
+				0A7B309DB1176384A30AAC3B5ADB9C48 /* FW_ExpandableTV.swift */,
+				F87802467D0E05B3766430141E26D5D3 /* FW_ExpandableTVCell.swift */,
+				3C4EF417B29882AEEA3251189BD46A85 /* UIButton+Ext.swift */,
+				8B8D695E9297F5D83FC97E260F08352C /* Pod */,
+				6676876F9A7E06E0C56C7371AFAB8FA4 /* Resources */,
+				D7F59B9D6D6FA7C9285E3042DF239BBF /* Support Files */,
 			);
-			name = Products;
+			name = FW_ExpandableTableView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		D7F59B9D6D6FA7C9285E3042DF239BBF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				050850A43C90E5F5113A103C1B5FBF28 /* FW_ExpandableTableView.modulemap */,
+				9B943F28A91E258714D15EB7A8E47F96 /* FW_ExpandableTableView.xcconfig */,
+				14F148A8B24FAEF86A3D8D6F5697044F /* FW_ExpandableTableView-dummy.m */,
+				ACA9273F8D082AC8A2C7DEB856254E88 /* FW_ExpandableTableView-prefix.pch */,
+				5E060E81C233729F168D6F3EF1B9050E /* FW_ExpandableTableView-umbrella.h */,
+				094CC522D3568BCA45CED365FFE775DE /* Info.plist */,
+				DDDA8BE53C2A6CE361335ECFB18B291E /* ResourceBundle-FW_ExpandableTableView-Info.plist */,
+				99F17CB5100DACFA78628D5ACF9086E0 /* ResourceBundle-FW_ExpandableTVCell-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FW_ExpandableTableView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,11 +298,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		40784101DDF239205EC2B39CB794B8F4 /* Headers */ = {
+		6B7AED7BDE6EE80D3048164229E0E32A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE54DFBB529A23AB855501E7EBE76CB0 /* FW_ExpandableTableView-umbrella.h in Headers */,
+				C7D116CE5F9A3EC09E6262F90B61763B /* FW_ExpandableTableView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,41 +317,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6E6A3F7285C9761322E66541009A60C0 /* FW_ExpandableTableView-FW_ExpandableTableView */ = {
+		5493B888BF9F62F29EBD8248CC359CF8 /* FW_ExpandableTableView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D36500AB6D25335ED59C7D84D4B8E341 /* Build configuration list for PBXNativeTarget "FW_ExpandableTableView-FW_ExpandableTableView" */;
+			buildConfigurationList = 62A438B1D521EF628141D9A8415DFCCB /* Build configuration list for PBXNativeTarget "FW_ExpandableTableView" */;
 			buildPhases = (
-				8C76AEF12D95B72220F743EE7E9B3783 /* Sources */,
-				0B46BB7458F57018C5DD0104AD445D88 /* Frameworks */,
-				CFDFE6951D65AB20EB4C6190E51EA7C1 /* Resources */,
+				6B7AED7BDE6EE80D3048164229E0E32A /* Headers */,
+				3D7AE4B023C6A9C53B1AF41C2CB94AB7 /* Sources */,
+				DDE5D664A26E95948C73BFD21BB9DEAE /* Frameworks */,
+				47C287CD2DB469E1E8B089CC2FB7FCF3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "FW_ExpandableTableView-FW_ExpandableTableView";
-			productName = "FW_ExpandableTableView-FW_ExpandableTableView";
-			productReference = 73C1E9282AF9CED4CB2D650BFEB74160 /* FW_ExpandableTableView.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		78C01FB57ED8DE0AAC55D8A3238AB351 /* FW_ExpandableTableView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4F656EC50B379F6BCD7454BAED1BEDC4 /* Build configuration list for PBXNativeTarget "FW_ExpandableTableView" */;
-			buildPhases = (
-				40784101DDF239205EC2B39CB794B8F4 /* Headers */,
-				E33B166CD0B8B477C1D8E32F6EB8334E /* Sources */,
-				555C30098B412FB5361331FFF01C27CF /* Frameworks */,
-				A05807F6D320291B3806D7998726E013 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F9FC9D4E79D68690B5382E0E6150E3E6 /* PBXTargetDependency */,
+				6FFD82FB00B1CA1B3C74F56F8682E80C /* PBXTargetDependency */,
+				BB48AC8D1D392E4D970CA4362CC34231 /* PBXTargetDependency */,
 			);
 			name = FW_ExpandableTableView;
 			productName = FW_ExpandableTableView;
-			productReference = D4402C1987AF625ED2FC7754F8EB6863 /* FW_ExpandableTableView.framework */;
+			productReference = D559F912910A7C7170C34C60084178B5 /* FW_ExpandableTableView.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		66856BEE6CD584162B553011EFCE2D5B /* FW_ExpandableTableView-FW_ExpandableTVCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D06F5A877B8054B05EBE60B99A244A70 /* Build configuration list for PBXNativeTarget "FW_ExpandableTableView-FW_ExpandableTVCell" */;
+			buildPhases = (
+				8BC95A39D345550660B98810695A7013 /* Sources */,
+				B94A2ECDD7664F611650B03ABDA14903 /* Frameworks */,
+				39D6740208779F68B87D09643997C3B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FW_ExpandableTableView-FW_ExpandableTVCell";
+			productName = "FW_ExpandableTableView-FW_ExpandableTVCell";
+			productReference = 7F21491F3C38581B3D69A78C7E9281D0 /* FW_ExpandableTVCell.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		952B36ACFC559159AB812CE2ED20471F /* Pods-FW_ExpandableTableView_Tests */ = {
 			isa = PBXNativeTarget;
@@ -348,8 +370,25 @@
 			);
 			name = "Pods-FW_ExpandableTableView_Tests";
 			productName = "Pods-FW_ExpandableTableView_Tests";
-			productReference = 7D40362D562060F2E97644A212864DBC /* Pods_FW_ExpandableTableView_Tests.framework */;
+			productReference = 8F866ED8E8783003E1C40F766668CFC7 /* Pods_FW_ExpandableTableView_Tests.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		B8E97EAB2258E34DEF651AA044DB9104 /* FW_ExpandableTableView-FW_ExpandableTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 143468E20639100A99FDE3D7AE419DC3 /* Build configuration list for PBXNativeTarget "FW_ExpandableTableView-FW_ExpandableTableView" */;
+			buildPhases = (
+				CADF9EF09007FEF8E68702FB4EC1514F /* Sources */,
+				64BA065831133922E633BFC58F73FEF4 /* Frameworks */,
+				541D81BB44255AFEA851BABC04E08653 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FW_ExpandableTableView-FW_ExpandableTableView";
+			productName = "FW_ExpandableTableView-FW_ExpandableTableView";
+			productReference = 6364D01EF61CC9624316C3F2A49F69F6 /* FW_ExpandableTableView.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		BEB2B1C364BE2D76B5E27E89A452A551 /* Pods-FW_ExpandableTableView_Example */ = {
 			isa = PBXNativeTarget;
@@ -367,7 +406,7 @@
 			);
 			name = "Pods-FW_ExpandableTableView_Example";
 			productName = "Pods-FW_ExpandableTableView_Example";
-			productReference = B05D7CFC48493B9FB78104B5A5BEFE50 /* Pods_FW_ExpandableTableView_Example.framework */;
+			productReference = 70BC5E677611B9A3CA18279032B658BA /* Pods_FW_ExpandableTableView_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -377,7 +416,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1010;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -387,12 +426,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C8AC184C64746F619946130B08E80A25 /* Products */;
+			productRefGroup = 150FE9FEE7B82E771735A600FBCF08F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				78C01FB57ED8DE0AAC55D8A3238AB351 /* FW_ExpandableTableView */,
-				6E6A3F7285C9761322E66541009A60C0 /* FW_ExpandableTableView-FW_ExpandableTableView */,
+				5493B888BF9F62F29EBD8248CC359CF8 /* FW_ExpandableTableView */,
+				B8E97EAB2258E34DEF651AA044DB9104 /* FW_ExpandableTableView-FW_ExpandableTableView */,
+				66856BEE6CD584162B553011EFCE2D5B /* FW_ExpandableTableView-FW_ExpandableTVCell */,
 				BEB2B1C364BE2D76B5E27E89A452A551 /* Pods-FW_ExpandableTableView_Example */,
 				952B36ACFC559159AB812CE2ED20471F /* Pods-FW_ExpandableTableView_Tests */,
 			);
@@ -407,11 +447,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A05807F6D320291B3806D7998726E013 /* Resources */ = {
+		39D6740208779F68B87D09643997C3B5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72F270C7F2437E7551ACCFE46E9A8C8E /* FW_ExpandableTableView.bundle in Resources */,
+				258FBAFAD7272E90CAF49BDF13473730 /* downArrow.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47C287CD2DB469E1E8B089CC2FB7FCF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69023265134602078061FEF2B1DA8EA2 /* FW_ExpandableTableView.bundle in Resources */,
+				0C6D88935C2549294B81EF9E4D2FA0D3 /* FW_ExpandableTVCell.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541D81BB44255AFEA851BABC04E08653 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5895766B534E267E1611FE67BAAE35D /* downArrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,14 +476,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFDFE6951D65AB20EB4C6190E51EA7C1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D21E6FBCF0EDF1DFC794FEFC653F0C14 /* downArrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +490,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C76AEF12D95B72220F743EE7E9B3783 /* Sources */ = {
+		3D7AE4B023C6A9C53B1AF41C2CB94AB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F9C7C452552ACCB401A4A0FC11F13AF /* FW_ExpandableTableView-dummy.m in Sources */,
+				93F95DAAC0A77631D21A7730213977E8 /* FW_ExpandableTV.swift in Sources */,
+				8314B63CA23D3957E032F895B4D4B525 /* FW_ExpandableTVCell.swift in Sources */,
+				C278B8730B0A09F33A09AFED48E37DE5 /* UIButton+Ext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BC95A39D345550660B98810695A7013 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -456,15 +516,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E33B166CD0B8B477C1D8E32F6EB8334E /* Sources */ = {
+		CADF9EF09007FEF8E68702FB4EC1514F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96C55580BCEFD1670C4115D9E182F5FB /* FW_ExpandableTableView-dummy.m in Sources */,
-				C036D36D85B11B76F97A37C7F7FA1274 /* FW_ExpandableTV.swift in Sources */,
-				7FC0ABC244F80A2919E326F0FE961FA9 /* FW_ExpandableTVCell.swift in Sources */,
-				D9B1F4FB10B0A0779E52BC8D89D69CDB /* ReplaceMe.swift in Sources */,
-				BA68ED161EDE795FC3A766234564CC53 /* UIButton+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,8 +529,20 @@
 		5C79B8E5C259EC398DE2CA552A5A6B3C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FW_ExpandableTableView;
-			target = 78C01FB57ED8DE0AAC55D8A3238AB351 /* FW_ExpandableTableView */;
+			target = 5493B888BF9F62F29EBD8248CC359CF8 /* FW_ExpandableTableView */;
 			targetProxy = D6F3DBE05B8CF85FF8B4553065B35B28 /* PBXContainerItemProxy */;
+		};
+		6FFD82FB00B1CA1B3C74F56F8682E80C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FW_ExpandableTableView-FW_ExpandableTVCell";
+			target = 66856BEE6CD584162B553011EFCE2D5B /* FW_ExpandableTableView-FW_ExpandableTVCell */;
+			targetProxy = B74937584A22B0D8FF09839B34348323 /* PBXContainerItemProxy */;
+		};
+		BB48AC8D1D392E4D970CA4362CC34231 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FW_ExpandableTableView-FW_ExpandableTableView";
+			target = B8E97EAB2258E34DEF651AA044DB9104 /* FW_ExpandableTableView-FW_ExpandableTableView */;
+			targetProxy = 0B909B4AE71A7874D79E3F7F8E9F62FD /* PBXContainerItemProxy */;
 		};
 		CA42AE5EBAD6D34F176E3D8091AB0560 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -483,18 +550,12 @@
 			target = BEB2B1C364BE2D76B5E27E89A452A551 /* Pods-FW_ExpandableTableView_Example */;
 			targetProxy = 4DD9D889B8FA341A01917CA5EDC6121C /* PBXContainerItemProxy */;
 		};
-		F9FC9D4E79D68690B5382E0E6150E3E6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "FW_ExpandableTableView-FW_ExpandableTableView";
-			target = 6E6A3F7285C9761322E66541009A60C0 /* FW_ExpandableTableView-FW_ExpandableTableView */;
-			targetProxy = B87754EDC143DAC75FED18063EF79900 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		003B5558DE7E6F0EDC44080C864E33C6 /* Release */ = {
+		030892D55B765431CC36F8F266508832 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76D2F031889AC760A16CC2743096159C /* FW_ExpandableTableView.xcconfig */;
+			baseConfigurationReference = 9B943F28A91E258714D15EB7A8E47F96 /* FW_ExpandableTableView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FW_ExpandableTableView";
@@ -508,19 +569,35 @@
 			};
 			name = Release;
 		};
-		1EBA7B6E3662468925A00813AE7C8E78 /* Debug */ = {
+		25459A1301C5B042E069E48E7988A77F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76D2F031889AC760A16CC2743096159C /* FW_ExpandableTableView.xcconfig */;
+			baseConfigurationReference = 9B943F28A91E258714D15EB7A8E47F96 /* FW_ExpandableTableView.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FW_ExpandableTableView";
-				INFOPLIST_FILE = "Target Support Files/FW_ExpandableTableView/ResourceBundle-FW_ExpandableTableView-Info.plist";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FW_ExpandableTableView/FW_ExpandableTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FW_ExpandableTableView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FW_ExpandableTableView/FW_ExpandableTableView.modulemap";
+				PRODUCT_MODULE_NAME = FW_ExpandableTableView;
 				PRODUCT_NAME = FW_ExpandableTableView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -593,9 +670,9 @@
 			};
 			name = Debug;
 		};
-		3D45352CC12E4ECA4FE31BFBE6074D50 /* Release */ = {
+		4DE00461B09327E7BF6A43E5281A991A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76D2F031889AC760A16CC2743096159C /* FW_ExpandableTableView.xcconfig */;
+			baseConfigurationReference = 9B943F28A91E258714D15EB7A8E47F96 /* FW_ExpandableTableView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -617,8 +694,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -627,35 +703,19 @@
 			};
 			name = Release;
 		};
-		43864DDCC3486A8030DA85DD364FF637 /* Debug */ = {
+		599F0D508C11E766282B093B70C6739A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76D2F031889AC760A16CC2743096159C /* FW_ExpandableTableView.xcconfig */;
+			baseConfigurationReference = 9B943F28A91E258714D15EB7A8E47F96 /* FW_ExpandableTableView.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FW_ExpandableTableView/FW_ExpandableTableView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FW_ExpandableTableView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FW_ExpandableTableView";
+				INFOPLIST_FILE = "Target Support Files/FW_ExpandableTableView/ResourceBundle-FW_ExpandableTVCell-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FW_ExpandableTableView/FW_ExpandableTableView.modulemap";
-				PRODUCT_MODULE_NAME = FW_ExpandableTableView;
-				PRODUCT_NAME = FW_ExpandableTableView;
+				PRODUCT_NAME = FW_ExpandableTVCell;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -687,14 +747,29 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		958CC9239297B368AEE60729FDFD8B11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B943F28A91E258714D15EB7A8E47F96 /* FW_ExpandableTableView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FW_ExpandableTableView";
+				INFOPLIST_FILE = "Target Support Files/FW_ExpandableTableView/ResourceBundle-FW_ExpandableTableView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = FW_ExpandableTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
 		};
 		98EDB2D64C04DF55639BFBCE4490109B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -731,6 +806,22 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		BEA645EC552CB9C2D14EE8FE6D252C40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B943F28A91E258714D15EB7A8E47F96 /* FW_ExpandableTableView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FW_ExpandableTableView";
+				INFOPLIST_FILE = "Target Support Files/FW_ExpandableTableView/ResourceBundle-FW_ExpandableTVCell-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = FW_ExpandableTVCell;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
 		};
 		C92782E717C52E3633C9A5F211E7987A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -851,6 +942,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -858,6 +950,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		143468E20639100A99FDE3D7AE419DC3 /* Build configuration list for PBXNativeTarget "FW_ExpandableTableView-FW_ExpandableTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				958CC9239297B368AEE60729FDFD8B11 /* Debug */,
+				030892D55B765431CC36F8F266508832 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -867,11 +968,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F656EC50B379F6BCD7454BAED1BEDC4 /* Build configuration list for PBXNativeTarget "FW_ExpandableTableView" */ = {
+		62A438B1D521EF628141D9A8415DFCCB /* Build configuration list for PBXNativeTarget "FW_ExpandableTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				43864DDCC3486A8030DA85DD364FF637 /* Debug */,
-				3D45352CC12E4ECA4FE31BFBE6074D50 /* Release */,
+				25459A1301C5B042E069E48E7988A77F /* Debug */,
+				4DE00461B09327E7BF6A43E5281A991A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -894,11 +995,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D36500AB6D25335ED59C7D84D4B8E341 /* Build configuration list for PBXNativeTarget "FW_ExpandableTableView-FW_ExpandableTableView" */ = {
+		D06F5A877B8054B05EBE60B99A244A70 /* Build configuration list for PBXNativeTarget "FW_ExpandableTableView-FW_ExpandableTVCell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EBA7B6E3662468925A00813AE7C8E78 /* Debug */,
-				003B5558DE7E6F0EDC44080C864E33C6 /* Release */,
+				599F0D508C11E766282B093B70C6739A /* Debug */,
+				BEA645EC552CB9C2D14EE8FE6D252C40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

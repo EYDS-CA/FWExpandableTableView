@@ -1,123 +1,53 @@
 [
 	{
-		"name": "",
+		"name": "0-0",
 		"children": [
 			{
-				"name": "",
+				"name": "0-0-0",
 				"children": [
 					{
-						"name": "",
+						"name": "0-0-0-0",
 						"children": [
 							{
-								"name": ""
+								"name": "0-0-0-0-0"
 							},
 							{
-								"name": ""
+								"name": "0-0-0-0-1"
 							},
 						]	
 					},
 					{
-						"name": ""
+						"name": "0-0-0-1"
 					},
 					{
-						"name": ""
+						"name": "0-0-0-2"
 					}
 				]	
 			},
 			{
-				"name": "",
+				"name": "0-0-1",
 				"children": [
 					{
-						"name": ""
+						"name": "0-0-1-0"
 					}
 				]	
 			}
 		]
 	},
 	{
-		"name": "",
+		"name": "0-1",
 		"children": [
 			{
-				"name": "",
+				"name": "0-1-0",
 				"children": [
 					{
-						"name": ""
+						"name": "0-1-0-0"
 					},
 					{
-						"name": ""
+						"name": "0-1-0-1"
 					}
 				]
 			}
 		]
-	},
-    {
-        "name": "",
-        "children": [
-            {
-                "name": "",
-                "children": [
-                    {
-                        "name": "",
-                        "children": [
-                            {
-                                "name": ""
-                            },
-                            {
-                                "name": ""
-                            },
-                        ]
-                    },
-                    {
-                        "name": ""
-                    },
-                    {
-                        "name": ""
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "children": [
-                    {
-                        "name": ""
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "name": "",
-        "children": [
-            {
-                "name": "",
-                "children": [
-                    {
-                        "name": "",
-                        "children": [
-                            {
-                                "name": ""
-                            },
-                            {
-                                "name": ""
-                            },
-                        ]
-                    },
-                    {
-                        "name": ""
-                    },
-                    {
-                        "name": ""
-                    }
-                ]
-            },
-            {
-                "name": "",
-                "children": [
-                    {
-                        "name": ""
-                    }
-                ]
-            }
-        ]
-    }
+	}
 ]
